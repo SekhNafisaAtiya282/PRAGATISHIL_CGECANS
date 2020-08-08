@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>Pratibimba</title>
+    <link rel="stylesheet" href="thtsignup.html">
+    <link rel="stylesheet" href="Home.html">
+    <link rel = "icon" type = "img/png" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTgBkQBsXbHzTn4jCijSBBE6RqSSw4DFuKM3g&usqp=CAU">
+    <link rel = "stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .headerlink {
+            text-decoration: none;
+            width: 10%;
+            padding: 0.4%;
+            text-align: center;
+        }
+
+        .headerlink:hover {
+            border: 2px solid #800000;
+            color: #800000;
+            background-color: #ffb1b1;
+            border-radius: 25px;
+        }
+
+        .headerlinksmall {
+            width: 50%;
+        }
+
+        .footerlink {
+            color: #FFFFFF;
+            text-decoration: none;
+            width: 10%;
+        }
+
+        .footerlink:hover {
+            color: #000000;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+            border: none;
+            display: block;
+        }
+
+        #bengbut, #engbut {
+            background-color: #ff0000;
+            color: #ffcccb;
+            border: 2px solid #ff0000;
+
+        }
+
+        .description {
+            width: 80%;
+            padding: 3%;
+            margin: auto;
+        }
+
+        .coordinators{
+            display: inline-block;
+            padding: 2%;
+            margin: 2%;
+            text-align: center;
+        }
+
+        .image {
+            display: inline-block;
+            height: 40%;
+            width: 60%;
+            padding: 2%;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .image {
+                display: inline-block;
+                height: 20%;
+                width: 30%;
+                padding: 2%;
+            }
+        }
+
+        .desc {
+            display: inline-block;
+        }
+
+        .divs {
+            padding: 0.1%;
+        }
+
+        .links {
+            padding: 1%;
+        }
+
+        .initiative:hover {
+            border: 2px solid #000000;
+            color: #000000;
+        }
+
+        .performance:hover {
+            border: 2px solid 	#FF1493;
+            color: 	#FF1493;
+        }
+
+        .facebook:hover {
+            border: 2px solid #4267B2;
+            color: #4267B2;
+        }
+
+        .youtube:hover {
+            border: 2px solid #FF0000;
+            color: 	#FF0000;
+        }
+
+        .notice {
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+
+        .notice:hover {
+            color: #FF0000;
+            background-color: #000000;
+            border: 2px solid #FF0000;
+            border-radius: 25px;
+        }
+
+
+        .but {
+            margin-top: 150%;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .but {
+                margin-top: 25%;
+            }
+        }
+
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+
+        .slideshowimages {
+            width: 60%;
+            height: 300px;
+            padding: 2px;
+            margin: auto;
+            margin-top:2%;
+        }
+
+        .dot {
+            display: none;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .slideshowimages {
+                width: 100%;
+                height: 600px;
+                padding: 2px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class = "w3-top w3-red w3-text-white w3-hide-small">
+        <p class = "w3-left w3-large">&nbsp;&nbsp;Pratibimba Theatre Group</p>
+        <p><a class = "w3-right w3-large headerlink" href = "Home.html"><i class = "fa fa-check"></i>&nbsp;Home</a></p>
+        <p><a class = "w3-right w3-large headerlink" href = "https://docs.google.com/forms/u/3/d/1NLnMkCaC5MqBIriRIfJY4Pu6CRj2ecacJjsPFkr4u-M/edit?usp=drivesdk&chromeless=1"><i class = "fa fa-user-plus"></i>&nbsp;Register</a></p>
+
+       
+
+    <div class = "w3-red w3-text-white w3-hide-large">
+        <p class = "w3-center w3-large">Pratibimba Theatre Group</p>
+        <div class = "w3-center smalllink">
+           
+        </div>
+        <div class = "w3-center smalllink">
+            <p class = "w3-center"><a class = "w3-center w3-large w3-button w3-hover-white headerlinksmall" href = "https://docs.google.com/forms/u/3/d/1NLnMkCaC5MqBIriRIfJY4Pu6CRj2ecacJjsPFkr4u-M/edit?usp=drivesdk&chromeless=1"><i class = "fa fa-user-plus"></i>&nbsp;Register</a></p>
+        </div>
+        <div class = "w3-center smalllink">
+            <p class = "w3-center"><a class = "w3-center w3-large w3-button w3-hover-white headerlinksmall" href = "index.html"><i class = "fa fa-check"></i>&nbsp;Home</a></p>
+        </div>
+    </div>
+</header>
+<br><br><br>
+<div class = "w3-center w3-hide-small w3-text-red">
+    <h1>WELCOME</h1>
+    <h3>TO OUR OFFICIAL PAGE</h3>
+</div>
+<div class = "w3-center w3-hide-large w3-text-red">
+    <h1>WELCOME</h1>
+    <h3>TO OUR OFFICIAL PAGE</h3>
+</div>
+<div>
+    <img src="https://drive.google.com/uc?id=17pQjwvAPEuv_PfgUUEHFklZhLFmlj_36" alt="Theatre Group"  />
+</div>
+<br>
+
+<div id="eng" class="w3-card w3-red w3-text-pale-red w3-center description">
+    <div id="head"><h1><center><b><i>DESCRIPTION</i></b></center></h1></div>
+    <p><strong>Theatrical Culture is Another Face of Art Which has Been Enriching Indian Culture From 15th Century BC.
+        In the Recent Days of Modernity And Cultural Division,Theatre is Becoming the Corner Stone. <i>"Pratibimba Theatre Group" </i>,Created by <i>"Pragatishil CGECian"</i>,
+        is a Small Attempt to Recover Our Theatrical World from the Extinction and to Put a Smile on the Faces of Theatre-Lovers.</strong></p>
+</div>
+</div>
+
+<div id="ben" class=" w3-card w3-red w3-text-pale-red w3-center description">
+    <div id="head"><h1><center><b><i>বিবরণ</i></b></center></h1></div>
+    <p>নাট্যচর্চা খ্রীষ্টপূর্ব পনেরো শতক থেকে শিল্পকলার অন্যতম ধারা হিসেবে ভারতীয় সংস্কৃতিকে প্রভাবিত করে আসছে । বর্তমানে আধুনিকতার ছোঁয়া এবং সাংস্কৃতিক বিভাজনে নাট্য জগৎ একেবারেই কোনঠাসা হয়ে পড়েছে । <b>"প্রগতিশীল Cgecian"</b> -এর উদ্যোগে গঠিত "প্রতিবিম্ব থিয়েটার গ্রুপ" নাট্য জগৎ-কে অবলুপ্তির পথ থেকে ফিরিয়ে নিয়ে প্রত্যেক নাট্যপ্রেমীর মুখে ছোট্ট একটা হাসি ফোটানোর সামান্য প্রয়াস ।</p></div>
+</div>
+
+<div class = "w3-card w3-purple w3-text-pale-blue">
+    <h3 class = "w3-center">Cordinators of <i>Pratibimba</i> | The Theatre CLub</h3>
+
+
+    <div class = "w3-card-4 w3-pale-blue w3-text-purple w3-center coordinators">
+        <img  class = "image"
+              src="https://drive.google.com/uc?id=17Nhd3Rl2Y_3ofYbw9oZgfD-kjZB-3Cf3" alt="cordinator" copyright="cc by pragatishil cgecian" width="168">
+        <p class = "w3-center desc"><i>নাট্যচর্চা খ্রীষ্টপূর্ব পনেরো শতক থেকে শিল্পকলার অন্যতম ধারা হিসেবে ভারতীয় সংস্কৃতিকে প্রভাবিত করে আসছে । বর্তমানে আধুনিকতার ছোঁয়া এবং সাংস্কৃতিক বিভাজনে নাট্য জগৎ একেবারেই কোনঠাসা হয়ে পড়েছে । "প্রগতিশীল Cgecian" -এর উদ্যোগে গঠিত "প্রতিবিম্ব থিয়েটার গ্রুপ" নাট্য জগৎ-কে অবলুপ্তির পথ থেকে ফিরিয়ে নিয়ে প্রত্যেক নাট্যপ্রেমীর মুখে ছোট্ট একটা হাসি ফোটানোর সামান্য প্রয়াস ।</i><br>-Sayandip, Batch 2021</p>
+    </div>
+
+
+    <div class = "w3-card-4 w3-pale-blue w3-text-purple w3-center coordinators">
+        <div>
+            <img  class = "image"
+                  src="https://drive.google.com/uc?id=17OPSdMsQ8k0-b1Fa8Z-ONIIZ0ARhkOEe" alt="cordinator" copyright="cc by pragatishil cgecian">
+            <p class = "w3-center desc"><i>"life is nothing but a stage"<br>Yes! What are we doing everyday? We are doing a perfect acting of being ourself. Theatre is a part of our life and it is proforma to express and relate about what is your thinking . Our mind is script of life. That's why by pushing the mind hard we created our theatre club protibimbo. Let's give a access to our mind to flourish them in their own way by theatre in this club . See you again here ....in protibimbo</i><br>-Tapasree Kait, ECE, batch 2022</p>
+        </div>
+    </div>
+</div>
+<br><br>
+<div>
+    <div class = "w3-third w3-blue w3-text-pale-blue w3-center divs">
+        <h3 class = "w3-black w3-text-white w3-center">INFORMATION</h3>
+        <p class = "w3-large"><i class="fa fa-bomb"></i>&nbsp;Initiatives</p>
+        <p class = "w3-large"><a class = "links initiative"><i class="fa fa-crosshairs"></i>&nbsp;Initiative 1</a></p>
+        <p class = "w3-large"><a class = "links initiative"><i class="fa fa-crosshairs"></i>&nbsp;Initiative 2</a></p>
+        <p class = "w3-large"><i class="fa fa-sign-language"></i>&nbsp;Performances</p>
+        <p class = "w3-large"><a class = "links performance" ><i class="fa fa-american-sign-language-interpreting"></i>&nbsp;Performance 1</a></p>
+        <p class = "w3-large"><a class = "links performance"><i class="fa fa-american-sign-language-interpreting"></i>&nbsp;Performance 2</a></p>
+        <p class = "w3-large"><i class="fa fa-link"></i>&nbsp;Our Links</p>
+        <p class = "w3-large"><a class = "links facebook"><i class="fa fa-facebook"></i>&nbsp;Facebook</a></p>
+        <p class = "w3-large"><a class = " links youtube"><i class="fa fa-youtube-play"></i>&nbsp;You Tube</a></p>
+        <br>
+
+    </div>
+    <div class = "w3-third 	divs">
+        <img
+                src="https://drive.google.com/uc?id=17YA2S5onCEp2HG2NVwLu5MKx7g61gIcB" alt="logo Protibimbo" copyright="cc by pragatishil cgecian" height="460px">
+    </div>
+    <div class = "w3-third w3-blue w3-text-pale-blue">
+    </div>
+    <div class = "w3-third w3-blue w3-text-pale-blue w3-center divs">
+        <h3 class = "w3-black w3-text-white w3-center">NOTICE</h3>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 1</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 2</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 3</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 4</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 5</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 6</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 7</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 8</a></p>
+        <p class = "w3-large"><a class = "links notice"><i class="fa fa-exclamation"></i>&nbsp;Notice 9</a></p>
+        <br>
+    </div>
+</div>
+<br><br><br>
+
+<div class="slideshow-container">
+    <br><br>
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=134QKV55s-znoNQpU4pHVFTTCjdjo0Zvh" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13W20Y5rMeyNa39EQyzhJ4iMaHp2lWD1_" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=138cRfFu4kkBG23M1w5vapCX56wMoce0W" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13abT5zrMR4Gl54Gup_44_ZpFAkUPWaoy" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=144LMHZGBDqBMMW-IsTwL-XAMVYT2sH79" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=142hhHAITs679424nnLwpqFKRjdkpob-k" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=12tY1F6Vg6JajD8G56oO8vPstS51MDfbt" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13Z-w7hjRJMghuZgt6R1eOjw4OxC1SIRs" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13OgZs_RUrj6y8gp75Qssi19j_chbFbZA" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13QWXHntgBCUyxIHs3fAkb9UjVdKiAuHR" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=149O_25AkZIl7gWyhh9hthW_XblKu-K4K" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=14WsqKRC9VK3IOKiX6gViwjq4zoXXWJ5l" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=132uGA8OXR9dm1MuIrexk7DUy2s4Dn9GK" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13x-oNAdkOFU72RH4FP2aQoIw9S5GS_50" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=14V8BicC37mTWlwmzAmNaGAg-dvakWtsh" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13qzbOy7eTuIk-X9iIEJyc0JAwxqnlmbt" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=14SRpuMaqzam3WLiDEokSoXuwlaWgmciT" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=149ojmwerJ_fOQnMDQ-eBqPF4dhNcYqGB" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13sCdNYbbEbW_ez2SFXP8Q7dD82A1B8Pa" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=13W20Y5rMeyNa39EQyzhJ4iMaHp2lWD1_" class = "slideshowimages">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://drive.google.com/uc?id=12zivCLGZZT3DQjxU9wof7XDyEyCH5-AN" class = "slideshowimages">
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+</div>
+<br><br><br><br>
+<div class = "w3-hide-large">
+    <br><br><br><br>
+</div>
+<footer class = "w3-bottom w3-red w3-text-white">
+    <p class = "w3-left w3-hide-small">&nbsp;&nbsp;Copyright &copy; প্রগতিশীল CGECian. All Rights Reserved &#x7c; </p>
+    <p><a class = "w3-right footerlink w3-hide-small" href="home.html" target="_blank">&nbsp;প্রগতিশীল CGEC</a></p>
+    <p><a class = "w3-right footerlink w3-hide-small" href="https://makaut1.ucanapply.com/smartexam/public/" target="_blank">&nbsp;Makaut-Offical</a></p>
+    <p><a class = "w3-right footerlink w3-hide-small" href="http://cgec.org.in/" target="_blank">&nbsp;CGEC-page</a></p>
+    <div class = "w3-hide-large">
+        <p class = "w3-center">&nbsp;&nbsp;Copyright &copy; প্রগতিশীল CGECian. All Rights Reserved &#x7c; </p>
+    </div>
+    <div class = " w3-center w3-hide-large">
+        <p><a class = "w3-center w3-button" href="http://cgec.org.in/" target="_blank">&nbsp;CGEC-page</a><a class = "w3-center w3-button" href="https://makaut1.ucanapply.com/smartexam/public/" target="_blank">&nbsp;Makaut-Offical</a></p>
+        <p><a class = "w3-center w3-button" href="Home.html" target="_blank">&nbsp;প্রগতিশীল CGEC</a></p>
+        <div class = "hide-large">
+        </div>
+</footer>
+</body>
+</html>
